@@ -6,11 +6,11 @@ Proper comments have been added to the files mentioned here with a search key 'P
 Summary of modifications:
 
 New namelist variables added in WRF-4.0.3/Registry/Registry.EM_COMMON to have user control on the source stregth, size, plume duration and number of layers to perturb
-      - tke_heat_flux_hot
-      - heat_flux_len
-      - heat_flux_wait_mins
-      - heat_flux_run_mins
-      - zPerturb
+* tke_heat_flux_hot
+* heat_flux_len
+* heat_flux_wait_mins
+* heat_flux_run_mins
+* zPerturb
 
 The following directories and files were modified to introduce a buoyant plume in default WRF model: 
       WRF-4.0.3/Registry/Registry.EM_COMMON
