@@ -28,6 +28,17 @@ Created a new namelist variable to take the number of layers to perturb for init
 ### Changes in module_first_rk_step_part2.F
 Modifications done in module_diffusion_em.F require some changes to the subroutine calls inside this file. 
 
+## Compiling
+Any changes to WRF Registry requires a clean-configure-compile action. Inside the main WRF directory, issue following commands: (If compiling for a 2D plume case, choose smpar option otherwise (sm+dm)par would be ideal) 
+```
+./clean -a
+./configure 
+./compile em_les
+```
+## Test case 
+
+A simple 2D test case to generate a buoyant thermal in a neutral boundary layer is added inside WRF-4.0.3/test/ folder. 
+
 ---06-18-2019---
 
 Currently I am working on modifying the vertical velocity tendencies so that a momentum flux can be added to the plume source
