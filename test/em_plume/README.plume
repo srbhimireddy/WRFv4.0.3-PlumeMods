@@ -1,0 +1,21 @@
+The ideal em_plume test case:
+
+This test case produces a buoyant thermal plume in large-eddy simulation (LES) of a
+neural boundary layer (NBL).  
+
+The environmental wind (or the initial wind profile) is set to zero in this default case.
+
+The ambience convection can be given by chaning the tke_heat_flux variable in namelist.
+And the plume source is specified by tke_heat_flux_hot and heat_flux_len variables.  
+
+A random perturbation is imposed initially on the mean temperature 
+field at the lowest grid levels (chosen by user from namelist dynamics) to kick off the
+turbulent motion. Double periodic boundary condition is used in x and y.
+
+The default version is 2D and uses a grid resolution of dx=dy=40m and dz=10m.
+
+All other options in the namelist are kept as ideal les case. 
+
+For running a 3D plume, WRF diffusion files are to be modifed and WRF recompiled. 
+Please see Readme.md file in the parent directory.
+ 
